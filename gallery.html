@@ -100,26 +100,76 @@
 	<script type="text/javascript">
 		var $grid = $('.grid ').packery({
 			itemSelector: '.grid-item ',
+			initLayout: false,
+			percentPosition: true,
 
 		});
 			// layout Packery after each image loads
 			$grid.imagesLoaded().progress( function() {
 				$grid.packery();
+				console.log('Loading');
 			});  
+
+			// $(window).resize(function() {
+			//     if(this.resizeTO) clearTimeout(this.resizeTO);
+			//     this.resizeTO = setTimeout(function() {
+			//         $(this).trigger('resizeEnd');
+			//     }, 1000);
+			// });
+
+			// $(window).bind('resizeEnd', function() {
+			//     $grid.packery();
+			//     console.log('Resize End');
+			// });
+
 
 	</script>
 	<style type="text/css">
 
 		* { box-sizing: border-box; } 
 
+		/* force scrollbar */
+		html { overflow-y: scroll; }
+
+		body { font-family: sans-serif; }
+
+		/* ---- grid ---- */
+
+		.grid {
+		  background: #DDD;
+		}
+
+		/* clear fix */
+		.grid:after {
+		  content: '';
+		  display: block;
+		  clear: both;
+		}
+
 		.grid-item{
 			float: left;
-			max-width: 50%;
+			max-width: 33%;
 		}
 		img {
 			display: block;
 			max-width: 100%;
+			padding: 10px;
+
+			-webkit-transition: all 0.1s ease; /* Safari and Chrome */
+			-moz-transition: all 0.1s ease; /* Firefox */
+			-ms-transition: all 0.1s ease; /* IE 9 */
+			-o-transition: all 0.1s ease; /* Opera */
+			transition: all 0.1s ease;
 		}
+		.grid-item img:hover {
+			-webkit-transform:scale(1.05); /* Safari and Chrome */
+			-moz-transform:scale(1.05); /* Firefox */
+			-ms-transform:scale(1.05); /* IE 9 */
+			-o-transform:scale(1.05); /* Opera */
+			transform:scale(1.05);
+		}
+
+
 	</style>
 
 </html>
