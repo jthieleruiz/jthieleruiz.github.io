@@ -6,170 +6,232 @@
 	    <meta charset="utf-8" />
 	    <meta name="viewport" content="width=device-width, initial-scale=1" />
 	    <link rel="stylesheet" href="assets/css/main.css" />
-	    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous">
+	    <script src="assets/js/jquery.min.js"></script>
+	    <script src="assets/js/jquery.scrollex.min.js"></script>
+	    <script src="assets/js/skel.min.js"></script>
+	    <script src="assets/js/util.js"></script>
+	    <script src="assets/js/main.js"></script>
 	    </script>
 	    <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
 	    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css" />
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
 	</head>
-	<!-- Header -->
-	<header id="header" class="alt">
-	    <!-- <div class="logo"><a href="index.html">Javier Thiele-Ruiz <span>photography</span></a></div> -->
-	    <a href="#menu">Menu</a>
-	</header>
-
-	<!-- Nav -->
-	<nav id="menu">
-	    <ul class="links">
-	        <li><a href="index.html">Home</a></li>
-	        <li><a href="gallery.html">Gallery</a></li>
-	        <li><a href="elements.html">Elements</a></li>
-	    </ul>
-	</nav>
-
-	<!-- PACKERY -->
-	<!-- <section id="one" class="wrapper style2">  -->
-	<section>
-	    <div class="inner">
-	        <div class="grid" } '>
-				<div class="grid-item">
-					<a href="https://c1.staticflickr.com/9/8148/29324593462_abebaddc38_k.jpg" data-fancybox="images" >
-						<img src="https://c1.staticflickr.com/9/8148/29324593462_abebaddc38_k.jpg" />
-					</a>
-				</div>
-				<div class="grid-item">
-					<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" data-fancybox="images">
-						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
-					</a>
-				</div>
-				<div class="grid-item">
-					<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" data-fancybox="images">
-						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
-					</a>
-				</div>
-				<div class="grid-item">
-					<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" data-fancybox="images">
-						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
-					</a>
-				</div>
-				<div class="grid-item">
-					<a href="https://c2.staticflickr.com/6/5499/30972532232_051e1dc57e_h.jpg" data-fancybox="images" >
-						<img src="https://c2.staticflickr.com/6/5499/30972532232_051e1dc57e_h.jpg" />
-					</a>
-				</div>
-				<div class="grid-item">
-					<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" data-fancybox="images">
-						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
-					</a>
-				</div>
-				<div class="grid-item">
-					<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" data-fancybox="images">
-						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
-					</a>
-				</div>
-				<div class="grid-item">
-					<a href="https://farm1.staticflickr.com/560/31434966252_8e1bc946da_b_d.jpg" data-fancybox="images" >
-						<img src="https://farm1.staticflickr.com/560/31434966252_8e1bc946da_b_d.jpg" />
-					</a>
-				</div>
-				<div class="grid-item">
-					<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" data-fancybox="images">
-						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
-					</a>
-				</div>
-				<div class="grid-item">
-					<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" data-fancybox="images">
-						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
-					</a>
-				</div>
-				<div class="grid-item">
-					<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" data-fancybox="images">
-						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
-					</a>
-				</div>
-				<div class="grid-item">
-					<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" data-fancybox="images">
-						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
-					</a>
+	<body class="subpage">
+		<!-- Header -->
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">Photography <span>by Javier Thiele-Ruiz</span></a></div>
+				<div class="header-right logo">
+					<a href="index.html">Home</a>
+					<a href="generic.html">Generic</a>
+					<a href="elements.html">Elements</a>
 				</div>
 
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">Generic</a></li>
+					<li><a href="elements.html">Elements</a></li>
+				</ul>
+			</nav>
+
+		<!-- PACKERY -->
+		<!-- <section id="one" class="wrapper style2">  -->
+		<section>
+		    <div class="inner">
+		        <div class="grid">
+					<div class="grid-item">
+						<a href="https://c1.staticflickr.com/9/8148/29324593462_abebaddc38_k.jpg" data-fancybox="images" >
+							<img src="https://c1.staticflickr.com/9/8148/29324593462_abebaddc38_k.jpg" />
+						</a>
+					</div>
+					<div class="grid-item">
+						<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" data-fancybox="images">
+							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+						</a>
+					</div>
+					<div class="grid-item">
+						<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" data-fancybox="images">
+							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+						</a>
+					</div>
+					<div class="grid-item">
+						<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" data-fancybox="images">
+							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+						</a>
+					</div>
+					<div class="grid-item">
+						<a href="https://c2.staticflickr.com/6/5499/30972532232_051e1dc57e_h.jpg" data-fancybox="images" >
+							<img src="https://c2.staticflickr.com/6/5499/30972532232_051e1dc57e_h.jpg" />
+						</a>
+					</div>
+					<div class="grid-item">
+						<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" data-fancybox="images">
+							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+						</a>
+					</div>
+					<div class="grid-item">
+						<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" data-fancybox="images">
+							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+						</a>
+					</div>
+					<div class="grid-item">
+						<a href="https://farm1.staticflickr.com/560/31434966252_8e1bc946da_b_d.jpg" data-fancybox="images" >
+							<img src="https://farm1.staticflickr.com/560/31434966252_8e1bc946da_b_d.jpg" />
+						</a>
+					</div>
+					<div class="grid-item">
+						<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" data-fancybox="images">
+							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+						</a>
+					</div>
+					<div class="grid-item">
+						<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" data-fancybox="images">
+							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+						</a>
+					</div>
+					<div class="grid-item">
+						<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" data-fancybox="images">
+							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+						</a>
+					</div>
+					<div class="grid-item">
+						<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" data-fancybox="images">
+							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+						</a>
+					</div>
+					<div class="grid-item">
+						<a href="http://c1.staticflickr.com/4/3939/33688470481_e0a8cf3b61_k.jpg" data-fancybox="images">
+							<img src="http://c1.staticflickr.com/4/3939/33688470481_e0a8cf3b61_k.jpg" />
+						</a>
+					</div>
+					<div class="grid-item">
+						<a href="http://c1.staticflickr.com/5/4496/37414734882_b2b2378519_h.jpg" data-fancybox="images">
+							<img src="http://c1.staticflickr.com/5/4496/37414734882_b2b2378519_h.jpg" />
+						</a>
+					</div>
+				</div>
 			</div>
-		</div>
-	</section>
-	<script type="text/javascript">
-		var $grid = $('.grid ').packery({
-			itemSelector: '.grid-item ',
-			initLayout: false,
-			percentPosition: true,
+		</section>
+		<script type="text/javascript">
+			var $grid = $('.grid ').packery({
+				itemSelector: '.grid-item ',
+				initLayout: false,
+				percentPosition: true,
 
-		});
-			// layout Packery after each image loads
-			$grid.imagesLoaded().progress( function() {
-				$grid.packery();
-				console.log('Loading');
-			});  
+			});
+				// layout Packery after each image loads
+				$grid.imagesLoaded().progress( function() {
+					$grid.packery();
+					console.log('Loading');
+				});  
 
-			// $(window).resize(function() {
-			//     if(this.resizeTO) clearTimeout(this.resizeTO);
-			//     this.resizeTO = setTimeout(function() {
-			//         $(this).trigger('resizeEnd');
-			//     }, 1000);
-			// });
+				// $(window).resize(function() {
+				//     if(this.resizeTO) clearTimeout(this.resizeTO);
+				//     this.resizeTO = setTimeout(function() {
+				//         $(this).trigger('resizeEnd');
+				//     }, 1000);
+				// });
 
-			// $(window).bind('resizeEnd', function() {
-			//     $grid.packery();
-			//     console.log('Resize End');
-			// });
-
-
-	</script>
-	<style type="text/css">
-
-		* { box-sizing: border-box; } 
-
-		/* force scrollbar */
-		html { overflow-y: scroll; }
-
-		body { font-family: sans-serif; }
-
-		/* ---- grid ---- */
-
-		.grid {
-		  background: #DDD;
-		}
-
-		/* clear fix */
-		.grid:after {
-		  content: '';
-		  display: block;
-		  clear: both;
-		}
-
-		.grid-item{
-			float: left;
-			max-width: 33%;
-		}
-		img {
-			display: block;
-			max-width: 100%;
-			padding: 10px;
-
-			-webkit-transition: all 0.1s ease; /* Safari and Chrome */
-			-moz-transition: all 0.1s ease; /* Firefox */
-			-ms-transition: all 0.1s ease; /* IE 9 */
-			-o-transition: all 0.1s ease; /* Opera */
-			transition: all 0.1s ease;
-		}
-		.grid-item img:hover {
-			-webkit-transform:scale(1.05); /* Safari and Chrome */
-			-moz-transform:scale(1.05); /* Firefox */
-			-ms-transform:scale(1.05); /* IE 9 */
-			-o-transform:scale(1.05); /* Opera */
-			transform:scale(1.05);
-		}
+				// $(window).bind('resizeEnd', function() {
+				//     $grid.packery();
+				//     console.log('Resize End');
+				// });
 
 
-	</style>
+		</script>
+		<style type="text/css">
 
+			* { box-sizing: border-box; } 
+
+			*:focus {outline:0;}
+
+
+			/* force scrollbar */
+			html { overflow-y: scroll; }
+
+			body { font-family: sans-serif; }
+
+			/* ---- grid ---- */
+
+			.grid {
+			  background: #1b1c1e;
+			  margin-right: auto;
+			  margin-left: auto;
+			}
+
+			/* clear fix */
+			/*.grid:after {
+			  content: '';
+			  display: block;
+			  clear: both;
+			}*/
+
+			.grid-item{
+				float: left;
+				max-width: 33%;
+				min-width: 300px;
+				/*padding: 12px;*/
+				margin: 2px;
+				overflow: hidden;
+				/*display: inline-block;*/
+
+			}
+			img {
+				display: block;
+				max-width: 100%;
+				vertical-align: middle;
+				/*padding: 6px;*/
+
+				/*transform:scale(0.95);*/
+
+				-webkit-transition: all 0.3s ease; /* Safari and Chrome */
+				-moz-transition: all 0.3s ease; /* Firefox */
+				-ms-transition: all 0.3s ease; /* IE 9 */
+				-o-transition: all 0.3s ease; /* Opera */
+				transition: all 0.3s ease;
+
+				-webkit-transform:scale(1.1); /* Safari and Chrome */
+				-moz-transform:scale(1.1); /* Firefox */
+				-ms-transform:scale(1.1); /* IE 9 */
+				-o-transform:scale(1.1); /* Opera */
+				transform:scale(1.1);
+
+
+			}
+			.grid-item img:hover {
+				-webkit-transform:scale(1); /* Safari and Chrome */
+				-moz-transform:scale(1); /* Firefox */
+				-ms-transform:scale(1); /* IE 9 */
+				-o-transform:scale(1); /* Opera */
+				transform:scale(1);
+			}
+
+			header {
+				background: black;
+				background: linear-gradient(black, #1b1c1e);
+				padding: 13px;
+
+			}
+
+			h2, p {
+				margin: 0 !important;
+				color: #777;
+			}
+
+			.header-right {
+				right: 1.25em;
+			}
+			.header-right a {
+				font-size: 1.1em !important;
+				padding-right: 5px;
+			}
+
+
+		</style>
+	</body>
 </html>
