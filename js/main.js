@@ -84,7 +84,7 @@ $(function(){
 
 		} , { offset: '95%' } );
 	};
-	contentWayPoint();
+	// contentWayPoint();
 
 	if ($('.probootstrap-main').length > 0 ) {
 		$('.probootstrap-main').imagesLoaded( {
